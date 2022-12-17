@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
@@ -8,7 +9,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,7 @@ void offLed() async {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
 
